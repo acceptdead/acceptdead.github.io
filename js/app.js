@@ -5,6 +5,7 @@
 angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives']).
   config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/INTRO', {templateUrl: 'partials/intro.html', controller: GenericViewCtrl});
+    $routeProvider.when('/Profile', {templateUrl: 'partials/profile.html', controller: GenericViewCtrl});
     $routeProvider.when('/Project_Server_Systems', {templateUrl: 'partials/project_server_systems.html', controller: GenericViewCtrl});
     $routeProvider.when('/Project_Web_Vulnerability', {templateUrl: 'partials/project_web_vulnerability.html', controller: GenericViewCtrl});
     $routeProvider.when('/Project_Server_Incident', {templateUrl: 'partials/project_server_incident.html', controller: GenericViewCtrl});
